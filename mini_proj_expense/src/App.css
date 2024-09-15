@@ -3,45 +3,107 @@ body{
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background-attachment: fixed;
   margin: 0; 
   font-family: Arial, sans-serif;
 }
+.head-container{
+  background-image: url("/components/himalyan-white.jpg");
+  background-size:cover; 
+  background-position:bottom; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  color:rgb(0, 0, 0);
+  background-color: rgba(255,255,255, 0);
+  width:100%;
+  text-align: center;
+  border-radius: 20px;
+  height: 250px;
+
+}
+.history-container{
+  background-color:rgba(255, 255, 255, 0.9);
+  padding:10px 20px;
+  border-radius: 30px;
+  width:280px;
+  border: 2px solid white;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 1);
+  max-height: 1000px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 15px;
+}
+.history-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+  background-color: rgba(192, 57, 43, 0.5);
+  border-radius: 10px;
+}
 .main-container {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 160px;
-    padding: 20px;
+    gap:50px;
+    padding:30px ;
+    width:1200px; ;
   }
   
   .app-container {
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 20px;
+    gap:40px;
+    display: flex;
+    flex-direction: row;
+    max-width: 2200px;
+    margin: 0;
+    padding: 10px;
     flex: 1;
     border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.9);
   }
   
-  .inc-exp-container {
+  .chart-container {
+    flex: 1;
+    width: 390px;
+    max-width: 500px;
+    margin-top: 3px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    flex-direction: column;
+    gap: 20px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border: 2px solid white;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 1);
   }
+
+  .inc-exp-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 300px;
+      max-width: 5000px;
+      border-radius: 30px;
+      background-color:rgba(255, 255, 255, 0.9);
+      border: 2px solid black;
+      box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.7); 
+      padding: 20px;
+      margin: 20px; 
+    }
+  
   
   .money {
     font-size: 1.2rem;
+    align-items: center;
   }
   
   .plus {
     color: #2ecc71;
-    padding-right: 15px;
   }
   
   .minus {
     color: #e74c3c;
-    padding-left:15px;
   }
   
   .list {
@@ -67,19 +129,7 @@ body{
     border-color: #e74c3c;
   }
   
-  .chart-container {
-    flex: 1;
-    max-width: 500px;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color:rgba(255, 255, 255, 0.9);
-  }
+  
   
   canvas {
     max-width: 100%;
@@ -106,13 +156,20 @@ body{
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
-    border: none;
+    border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
     margin-left: 10px;
   }
   
   .btn:hover {
-    background-color: #2980b9;
+    background-color: #04dcecae;
+  }
+  .text{
+    width:200px;
+  }
+
+  .form-control{
+    max-width: 280px;
   }
   
